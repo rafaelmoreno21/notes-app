@@ -1,0 +1,54 @@
+
+       <section class="forms-section">
+  <h1 class="section-title">Notes App</h1>
+  <div class="forms">
+
+      {{!-- Login --}}
+
+    <div class="form-wrapper">
+      <a href="/"><button type="button" class="switcher switcher-login">
+        Login
+        <span class="underline"></span>
+      </button></a>
+      <form class="form form-login" action="/">
+        <fieldset>
+          <legend>Please, enter your email and password for login.</legend>
+          <div class="input-block">
+            <label for="login-email">E-mail</label>
+            <input id="login-email" type="email" name="email" required placeholder="Email">
+          </div>
+          <div class="input-block">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" name="password" required placeholder="Password">
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+    </div>
+    {{!-- Sign Up --}}
+    <div class="form-wrapper is-active">
+      <button type="button" class="switcher switcher-signup">
+        Sign Up
+        <span class="underline"></span>
+      </button>
+      <form class="form form-signup" action="/" method="POST">
+        <fieldset>
+          <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+          <div class="input-block">
+            <label for="signup-email">E-mail</label>
+            <input id="signup-email" name="email" type="email" required placeholder="Email">
+          </div>
+          <div class="input-block">
+            <label for="signup-password">Password</label>
+            <input id="signup-password" name="password" type="password" placeholder="Password" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password-confirm">Confirm password</label>
+            <input id="signup-password-confirm" name="confirm_password" type="password" placeholder="Password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-signup">Continue</button>
+      </form>
+    </div>
+  </div>
+</section>
